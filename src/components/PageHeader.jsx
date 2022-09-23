@@ -6,6 +6,7 @@ const PageHeader = () => {
     <div className='bg-gray-900 text-white'>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/portfolio"></Link>
     </div>
   )
 }
