@@ -6,18 +6,8 @@ let Home = () => {
 
     return (
         <>
-            <div>
+            <div className="bg-red-600 dark:bg-gray-900 dark:text-white">
                 Hello From Home
-            </div>
-
-            <div className="my-10">
-                <button onClick={() => setCount(counter + 1) }>
-                    Add
-                </button>
-            </div>
-
-            <div className="py-3 px-5 bg-red-200">
-                { counter }
             </div>
         </>
     )
