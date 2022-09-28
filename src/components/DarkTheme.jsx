@@ -26,7 +26,7 @@ export const DarkTheme = () => {
 	}, [theme]);
 
   return (
-    <button type='button' onClick={handleThemeSwitch} className=" text-2xl">
+    <button type='button' onClick={handleThemeSwitch} className=" text-2xl relative md:-top-0 -top-1">
         {theme === 'dark' ? '🌙' : '🌞'}
         {/* {theme === 'dark'? '<i className="ri-moon-full"><i/>' : '<i className="ri-sun-fill"><i/>'} */}
     </button>

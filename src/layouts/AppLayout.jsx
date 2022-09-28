@@ -9,7 +9,7 @@ const AppLayout = () => {
   return (
         <>
         {/* <DarkTheme/> */}
-        <div>
+        <div className='select-none'>
           <PageHeader />
           <div>
             <Outlet />
