@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className='bg-purple-900 text-white py-24 px-6 space-y-2'>
       <div className='max-6xl mx-auto flex flex-col justify-center items-center space-y-3'>
@@ -60,7 +61,7 @@ export const Footer = () => {
         <hr className='' />
       </div>
       <div className='flex md:flex-row flex-col gap-1 justify-center items-center space-x-1'>
-        <p>Copyright &copy; 2022 Sani Amina</p>
+        <p>Powered by  &copy; {currentYear} Sani Amina</p>
         <p className='border-l-2  h-4 md:block hidden'></p>
         <p>Programmers City</p>
       </div>

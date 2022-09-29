@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import './remixicon/fonts/remixicon.css'
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 function App() {
   return (
@@ -27,5 +28,7 @@ function App() {
     </div>
   )
 }
+
+
 
 export default App

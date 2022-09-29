@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import DarkTheme from './DarkTheme'
 
 const PageHeader = () => {
+  const [showMenu,setShowMenu]=useState(false)
   return (
     <>
       
-      <div className="p-2 bg-white">
-        <div className="max-w-7xl mx-auto text-slate-900  md:flex-row flex gap-1 md:items-center">
-          <div className='font-poppins flex flex-grow md:flex-grow-0'>Sani Amina</div>
-          <div className="md:flex-row md:flex hidden flex-col flex-grow justify-center items-center font-poppins font-medium gap-2">
+      <div className="p-2 bg-white fixed top-0 z-50 w-full">
+        <div className="max-w-7xl mx-auto text-slate-900  md:flex-row flex gap- justify-center items-center px-6">
+          <div className='font-poppins flex flex-grow'>Sani Amina</div>
+          <div className={showMenu ? 'fixed sm:block p-3 sm:p-0 sm:relative flex-col sm:flex-row top-0 right-0 flex-grow  w-screen sm:h-auto sm:w-auto bg-gray-700  sm:bg-transparent h-screen bg-opacity-20 sm:backdrop-blur-0 backdrop-blur-lg' : 'hidden fixed sm:block p-3 sm:p-0 sm:relative flex-col sm:flex-row top-0 right-0 flex-grow sm:h-auto sm:w-autobg-gray-300 bg-gray-700 sm:bg-transparent bg-opacity-40 sm:backdrop-blur-0 backdrop-blur-lg'} style={{'zIndex':'9999999999999999999999999999999999999'}}>
+            <div className="bg-white sm:bg-transparent border sm:border-0 text-black sm:text-white rounded-md flex flex-col  sm:flex-row font-poppins font-medium ">
               <Link to="/">
                 <div className="group relative px-5 overflow-hidden transistion-all  p-1 hover:bg-white rounded flex justify-center items-center">
                   <span className='w-0 h-0 rounded bg-gradient-to-r from-purple-500 to-pink-500 absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1'></span>
@@ -40,11 +42,17 @@ const PageHeader = () => {
                   Download CV
                 </div>
               </Link>
+            </div>
+            <div className="pt-3 sm:hidden w-full flex justify-center items-center">
+              <div onClick={() => setShowMenu(!showMenu)} className="w-9 text-black flex justify-center items-center cursor-pointer h-9 bg-white border rounded-full">
+                  <i className="ri-close-fill"></i>
+              </div>
+            </div>
           </div>
-
-          <div className='flex md:justify-start justify-end items-end gap-2'>
-            <button type='button' className='md:hidden block'>
-              <i className='ri-menu-4-fill relative md:top-1 -top-1'></i>
+        
+          <div className='flex md:justify-start justify-end items-end gap-2 '>
+            <button type='button' onClick={()=>setShowMenu(!showMenu)}  className='md:hidden block'>
+              <i className='ri-menu-4-fill relative md:top-1 -top-1 '></i>
             </button>
             
             <div className="flex md:items-center md:justify-center justify-start">
