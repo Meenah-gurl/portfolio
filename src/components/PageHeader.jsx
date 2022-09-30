@@ -1,9 +1,37 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import DarkTheme from './DarkTheme'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+// import DarkTheme from './DarkTheme'
 
 const PageHeader = () => {
   const [showMenu,setShowMenu]=useState(false)
+  const [toggle, setToggle] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const location = useLocation().pathname;
+
+  useEffect(() => {
+      if (document.documentElement.classList.contains('dark')) {
+          setDarkMode(true);
+      } else {
+          setDarkMode(false);
+      }
+  }, [])
+  
+
+  let toggleDarkMode = () => {
+      if (localStorage.theme === 'dark') {
+          localStorage.removeItem('theme')
+      } else {
+          localStorage.setItem('theme', 'dark')
+      }
+
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+          setDarkMode(true);
+      } else {
+          document.documentElement.classList.remove('dark')
+          setDarkMode(false);
+      }
+  }
   return (
     <>
       
@@ -56,7 +84,10 @@ const PageHeader = () => {
             </button>
             
             <div className="flex md:items-center md:justify-center justify-start">
-              <DarkTheme/>
+              <button type='button' onClick={toggleDarkMode} className=" text-2xl relative md:-top-0 -top-1">
+                  {darkMode ? '🌙' : '🌞'}
+                  {/* {theme === 'dark'? '<i className="ri-moon-full"><i/>' : '<i className="ri-sun-fill"><i/>'} */}
+              </button>
             </div>
           </div>
         </div>
