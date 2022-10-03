@@ -15,11 +15,11 @@ export const briefabout = () => {
                 <p className='text-center md:text-lg text-base max-w-lg text-gray-600 font-normal'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem eum a placeat quos illo,</p>
             </span>
             <div className='max-w-4xl mx-auto py-14'>
-                <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-3 gap-6 mx-auto'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-3 gap-8 mx-auto'>
                     {/* first grid */}
                     <div className='flex flex-row md:justify-center'>
                         <div className='bg-white shadow-md shadow-gray-400 w-60 flex justify-center items-center'>
-                            <img src="/src/assets/me.png" className=' h-80' alt="" />
+                            <img src="/src/assets/megele.png" className=' ' alt="" />
                         </div>
                         <div className='bg-purple-500 w-20 h-60 relative top-12'>
                             <div className='flex flex-col justify-center items-center py-6 gap-2 text-white'>
@@ -45,7 +45,7 @@ export const briefabout = () => {
                                 </Link>
                                 <Link>
                                     <div className='rounded-full h-8 w-8 border-gray-400 border flex justify-center items-center'>
-                                        <i class="ri-linkedin-fill"></i>
+                                        <i className="ri-linkedin-fill"></i>
                                     </div>
                                 </Link>
                             </div>
@@ -53,7 +53,7 @@ export const briefabout = () => {
                     </div>
 
                     {/* second grid */}
-                    <div className='flex  flex-col '>
+                    <div className='flex  flex-col overflow-hidden'>
                         <div className='-mt-2'>
                             <h1 className='font-bold font-poppins text-lg justify-center flex'>Hello, i am Amina</h1>
                         </div>
@@ -81,15 +81,15 @@ export const briefabout = () => {
                                 {/* <hr className='border rotate-90 w-10 flex justify-center relative top-7' /> */}
                             </div>
                         </div>
-                        <div className='flex flex-col gap-2 pt-4 justify-center items-center'>
+                        <div className='flex flex-col gap-2 pt-4 md:justify-center md:items-center sm:justify-start sm:items-start'>
                             <div className='space-y-1'>
                                 <div className='font-poppins font-semibold text-sm'>
                                     Web Development
                                 </div>
                                 <div className='relative'>
-                                    <div className='bg-gray-400 rounded-full h-1 w-96 relative'></div>
-                                    <div className='bg-purple-500 rounded-full relative -top-1 h-1 w-80'></div>
-                                    <div className='relative -top-10 left-80 rounded-tl-md rounded-tr-md rounded-br-md bg-slate-900 w-7 h-7 flex justify-center text-white'>80</div>
+                                    <div className='bg-gray-400 rounded-full h-1 md:w-96 w-80 relative'></div>
+                                    <div className='bg-purple-500 rounded-full relative -top-1 h-1 md:w-80 w-72 '></div>
+                                    <div className='relative -top-10 md:left-80 left-72 rounded-tl-md rounded-tr-md rounded-br-md bg-slate-900 w-7 h-7 flex justify-center text-white'>80</div>
                                 </div>
                             </div>
                             <div className='space-y-1'>
@@ -97,7 +97,7 @@ export const briefabout = () => {
                                     UI/UX Designer
                                 </div>
                                 <div className='relative'>
-                                    <div className='bg-gray-400 rounded-full h-1 w-96 relative'></div>
+                                    <div className='bg-gray-400 rounded-full h-1 md:w-96 sm:w-80 relative'></div>
                                     <div className='bg-purple-500 rounded-full relative -top-1 h-1 w-64'></div>
                                     <div className='relative -top-10 left-64 rounded-tl-md rounded-tr-md rounded-br-md bg-slate-900 w-7 h-7 flex justify-center text-white'>70</div>
                                 </div>
@@ -107,13 +107,13 @@ export const briefabout = () => {
                                    Web Content Writer
                                 </div>
                                 <div className='relative'>
-                                    <div className='bg-gray-400 rounded-full h-1 w-96 relative'></div>
+                                    <div className='bg-gray-400 rounded-full h-1 md:w-96 sm:w-80 relative'></div>
                                     <div className='bg-purple-500 rounded-full relative -top-1 h-1 w-56'></div>
                                     <div className='relative -top-10 left-56 rounded-tl-md rounded-tr-md rounded-br-md bg-slate-900 w-7 h-7 flex justify-center text-white'>64</div>
                                 </div>
                             </div>
                         </div>
-                        <Link className='flex justify-start items-start pl-6'>
+                        <Link className='flex lg:justify-start lg:items-start md:justify-center lg:pl-6 pl-0'>
                             <div className='cursor-pointer transistion-all duration-300 hover:text-purple-400 text-white px-2  py-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded flex justify-center items-center'>
                                 Download CV
                             </div>

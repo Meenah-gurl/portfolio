@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+#tesBanner{
+    background-image: url('../src//assets/Tesbanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../src//assets/Tesbanner.png');
+    width: 100%;
+    /* height: 70vh; */
+}
+
+#serviceimage{
+    background-image: url('../src/assets/serv1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#serviceimage2{
+    background-image: url('../src/assets/serv2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#serviceimage3{
+    background-image: url('../src/assets/serv3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#serviceimage4{
+    background-image: url('../src/assets/serv1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannerSide{
+    background-image: url('../src/assets/blob\(1\).svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* #tabWeb{
+    display: none;
+}
+#tabDesign{
+    display: none;
+}
+
+.tab-pane .fade .active{
+    display: block;
+} */

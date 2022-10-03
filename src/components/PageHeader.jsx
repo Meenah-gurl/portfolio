@@ -36,7 +36,7 @@ const PageHeader = () => {
     <>
       
       <div className="p-2 bg-white fixed top-0 z-50 w-full">
-        <div className="max-w-7xl mx-auto text-slate-900  md:flex-row flex gap- justify-center items-center px-6">
+        <div className="max-w-6xl mx-auto text-slate-900  md:flex-row flex gap- justify-center items-center">
           <div className='font-poppins flex flex-grow'>Sani Amina</div>
           <div className={showMenu ? 'fixed sm:block p-3 sm:p-0 sm:relative flex-col sm:flex-row top-0 right-0 flex-grow  w-screen sm:h-auto sm:w-auto bg-gray-700  sm:bg-transparent h-screen bg-opacity-20 sm:backdrop-blur-0 backdrop-blur-lg' : 'hidden fixed sm:block p-3 sm:p-0 sm:relative flex-col sm:flex-row top-0 right-0 flex-grow sm:h-auto sm:w-autobg-gray-300 bg-gray-700 sm:bg-transparent bg-opacity-40 sm:backdrop-blur-0 backdrop-blur-lg'} style={{'zIndex':'9999999999999999999999999999999999999'}}>
             <div className="bg-white sm:bg-transparent border sm:border-0 text-black sm:text-white rounded-md flex flex-col  sm:flex-row font-poppins font-medium ">
