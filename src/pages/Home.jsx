@@ -13,7 +13,7 @@ let Home = () => {
     return (
         <>
             <div className="text-slate-900  lg:pt-28 py-24 pt-16 md:px-2 px-2">
-                <div className="flex lg:flex-row flex-col  max-w-6xl mx-auto ">
+                <div className="flex lg:flex-row flex-col  gap-4 max-w-6xl mx-auto ">
                     <div className="flex-grow flex flex-col w-full pt-20  space-y-4 lg:justify-start lg:items-start  justify-center items-center">
                         <div className='text-xs w-40 transistion-all text-white px-2  py-1 bg-slate-900 rounded flex justify-center items-center'>
                             Welcome to my portfolio
@@ -42,7 +42,7 @@ let Home = () => {
                     </div>
                     <div className="relative" id="bannerSide">
                         <div>
-                            <img src="/src/assets/mewhite.png" className="md:w-[50vh] w-[40vh] md:relative md:left-20" alt="" />
+                            <img src="/src/assets/mewhite.png" className="md:w-[50vh] w-[40vh] lg:relative lg:left-20 md:left-32" alt="" />
                         </div>
                     </div>
                     {/* <div className="">
