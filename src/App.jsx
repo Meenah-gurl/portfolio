@@ -7,7 +7,10 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
+import Login from './Auth/Login'
 import './remixicon/fonts/remixicon.css'
+import AuthLayout from './layouts/AuthLayout'
+import Register from './Auth/Register'
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 function App() {
@@ -23,6 +26,11 @@ function App() {
         </Route>
 
         {/* Auth Routes */}
+
+        <Route element={<AuthLayout />}>
+          <Route path='/login' element={<Login />} />
+          <Route path ='/register' element={<Register/>} />
+        </Route>
       </Routes>
       
     </div>

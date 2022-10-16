@@ -51,13 +51,21 @@
     /* height: 100%; */
 }
 
-/* #tabWeb{
-    display: none;
-}
-#tabDesign{
-    display: none;
+#authbanner{
+    background-image: url('../src/assets/loginBanner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
-.tab-pane .fade .active{
-    display: block;
-} */
+.active{
+    background:linear-gradient(to right, #ad54f0, #e549a3);
+    color: white !important;
+    padding: 3px;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+
