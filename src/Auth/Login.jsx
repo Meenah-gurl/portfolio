@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 export const Login = () => {
+  const [showPassword, togglePassword] = useState(false)
+
+
   return (
     <div>
       <div className='bg-white rounded-3xl w-80 flex-col space-y-5 font-poppins'>
@@ -21,15 +25,21 @@ export const Login = () => {
         <div className='px-4 py-4'>
           <form action="" method="get" className='space-y-3'>
             <div className='w-full'>
-              <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Email' />
+              <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Email' autoFocus required />
             </div>
-            <div className='w-full'>
-              <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Password' />
+            <div className='w-full flex bg-gray-300 rounded-2xl'>
+              <div className='flex-grow'>
+                <input type={showPassword ? 'text':'password'} className='rounded-2xl bg-gray-300 px-2 py-1 w-full border-none outline-none' placeholder='Password' required />
+              </div>
+              <div className='pr-4 pt-1 cursor-pointer' onClick={ () => togglePassword((prev) => !prev) }>
+                <i className='ri-eye-close-line text-gray-800' {...showPassword ? 'block':'hidden'}></i>
+                {/* <i className='ri-eye-line'></i> */}
+              </div>
             </div>
             <Link>
               <div className='text-center text-sm cursor-pointer font-semibold text-gray-400 mt-3'>Forgot Password</div>
             </Link>
-            <Link className='flex justify-center items-center'>
+            <Link to='/dashboard' className='flex justify-center items-center'>
               <div className='w-40 cursor-pointer transistion-all duration-300 hover:text-purple-400 text-white px-2  py-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex justify-center items-center'>
                  Login
               </div>

@@ -11,6 +11,8 @@ import Login from './Auth/Login'
 import './remixicon/fonts/remixicon.css'
 import AuthLayout from './layouts/AuthLayout'
 import Register from './Auth/Register'
+import Dashboard from './Auth/Dashboard'
+import PrivateLayout from './layouts/PrivateLayout'
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 function App() {
@@ -31,6 +33,13 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path ='/register' element={<Register/>} />
         </Route>
+
+        {/* Private Layout */}
+
+        <Route element={<PrivateLayout/>}>
+          <Route path='/dashboard' element={<Dashboard/>} />
+        </Route>
+
       </Routes>
       
     </div>

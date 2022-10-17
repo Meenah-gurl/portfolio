@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 export const Register = () => {
+const [showPassword, togglePassword] = useState(false)
+
   return (
     <div>
         <div className='bg-white rounded-3xl w-80 flex-col space-y-5 font-poppins'>
@@ -26,8 +28,13 @@ export const Register = () => {
                     <div className='w-full'>
                         <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Email' />
                     </div>
-                    <div className='w-full'>
-                        <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Password' />
+                    <div className='w-full flex bg-gray-300 rounded-2xl'>
+                        <div className='flex-grow'>
+                            <input type={showPassword ? 'text':'password'} className='rounded-2xl bg-gray-300 px-2 py-1 w-full border-none outline-none' placeholder='Password' required />
+                        </div>
+                        <div className='pr-4 pt-1 cursor-pointer' onClick={ () => togglePassword((prev) => !prev) }>
+                            <i className='ri-eye-close-line text-gray-800' {...showPassword ? 'block':'hidden'}></i>
+                        </div>
                     </div>
                     
                     <Link>
