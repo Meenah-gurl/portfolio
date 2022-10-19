@@ -23,6 +23,8 @@ export const Dashboard = () => {
             </div>
           </div>
         </div>
+
+        {/* left side bar */}
         <div className='md:border-l border-gray-400 h-screen py-10 px-4'>
           <div className='flex flex-row gap-4'>
             <div className='rounded-full  relative top-1'>
