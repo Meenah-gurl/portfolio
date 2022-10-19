@@ -1,30 +1,27 @@
 
-import * as firebase from 'firebase/app'
-import 'firebase/storage'
-import 'firebase/firestore'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 
-const firebaseConfig = {
+const app = firebase.initializeApp({
 
-  apiKey: "AIzaSyCr6mut9qRJWA8QngCt6g0OfRhMyhoDAwo",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 
-  authDomain: "portfolio-2f69c.firebaseapp.com",
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
 
-  projectId: "portfolio-2f69c",
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 
-  storageBucket: "portfolio-2f69c.appspot.com",
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
 
-  messagingSenderId: "1093689352803",
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
 
-  appId: "1:1093689352803:web:45a68b29af51f4ab368e56"
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 
-};
+});
+
+export const auth = app.auth()
+
+export default app
 
   
-  // Initialize Firebase
-  
-  firebase.initializeApp(firebaseConfig);
-
-  const portfolioStorage = firebase.storage()
-  const portfolioFirestore = firebase.firestore()
-
-  export{portfolioStorage, portfolioFirestore}

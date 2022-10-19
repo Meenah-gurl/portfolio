@@ -13,35 +13,37 @@ import AuthLayout from './layouts/AuthLayout'
 import Register from './Auth/Register'
 import Dashboard from './Auth/Dashboard'
 import PrivateLayout from './layouts/PrivateLayout'
+import { AuthProvider } from './contexts/AuthContext'
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 function App() {
   return (
     <div>
-      <Routes>
-        {/* Guest Routes */}
-        <Route element={<AppLayout />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/portfolio' element={<Portfolio/>} />
-          <Route path='/contact' element={<Contact/>} />
-        </Route>
+      <AuthProvider>
+        <Routes>
+          {/* Guest Routes */}
+          <Route element={<AppLayout />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/portfolio' element={<Portfolio/>} />
+            <Route path='/contact' element={<Contact/>} />
+          </Route>
 
-        {/* Auth Routes */}
+          {/* Auth Routes */}
 
-        <Route element={<AuthLayout />}>
-          <Route path='/login' element={<Login />} />
-          <Route path ='/register' element={<Register/>} />
-        </Route>
+          <Route element={<AuthLayout />}>
+            <Route path='/login' element={<Login />} />
+            <Route path ='/register' element={<Register/>} />
+          </Route>
 
-        {/* Private Layout */}
+          {/* Private Layout */}
 
-        <Route element={<PrivateLayout/>}>
-          <Route path='/dashboard' element={<Dashboard/>} />
-        </Route>
+          <Route element={<PrivateLayout/>}>
+            <Route path='/dashboard' element={<Dashboard/>} />
+          </Route>
 
-      </Routes>
-      
+        </Routes>
+      </AuthProvider>
     </div>
   )
 }
