@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Service = () => {
   return (
-    <div>
+    <div id='services'>
         <div className='py-8 px-4'>
             <div>
                 <span className='font-poppins font-bold flex flex-col justify-center items-center text-slate-900 text-lg'>
@@ -71,7 +71,7 @@ export const Service = () => {
                         </div>
                     </div>
                     {/* second column */}
-                    <div className=' rounded-md' id='serviceimage4'>
+                    <div className='rounded-md' id='serviceimage4'>
                         <div className='bg-gray-500 opacity-90 rounded-md py-4 px-3 text-slate-900'>
                             <div className='flex flex-col space-y-1 '>
                                 <div>

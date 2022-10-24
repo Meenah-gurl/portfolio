@@ -36,11 +36,11 @@ const [loading, setLoading] = useState(false)
         <div className='bg-white rounded-3xl w-80 flex-col space-y-5 font-poppins'>
             <div className='flex justify-around py-3'>
                 <div className=' flex justify-center items-center'>
-                <NavLink to="/login" activeClassname="active">
+                <NavLink to="/login" activeclassname="active">
                     <div className='text-gray-400 cursor-pointer'>Login</div>
                 </NavLink>
                 </div>
-                <NavLink to="/register" activeClassname="active">
+                <NavLink to="/register" activeclassname="active">
                     <div className='text-gray-400 cursor-pointer'>Register</div>
                 </NavLink>
             </div>
@@ -48,6 +48,7 @@ const [loading, setLoading] = useState(false)
                 <div className='rounded-lg w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500'></div>
             </div>
             <div className='px-4 py-4'>
+                {error && <div className='bg-red-600 px-3 py-2 mb-2 text-white rounded-2xl text-center'>{error}</div>}
                 <form onSubmit={handleSubmit} method="get" className='space-y-3'>
                     <div className='w-full' id='fullname'>
                         <input type="text" className='rounded-2xl bg-gray-300 px-2 py-1 w-full' placeholder='Fullname' ref={fullnameRef}  required/>
@@ -76,9 +77,9 @@ const [loading, setLoading] = useState(false)
                     <Link>
                         <div className='text-center text-sm cursor-pointer font-semibold text-gray-400 mt-3'>Already have an account</div>
                     </Link>
-                    <button disabled={loading} type='submit' className='flex justify-center items-center'>
+                    <button disabled={loading} type='submit' className='flex justify-center items-center mx-auto'>
                         <div className='w-40 cursor-pointer transistion-all duration-300 hover:text-purple-400 text-white px-2  py-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex justify-center items-center'>
-                         Register
+                            Register
                         </div>
                     </button>
                 </form>

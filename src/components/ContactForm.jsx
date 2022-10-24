@@ -3,24 +3,24 @@ import {Link} from 'react-router-dom'
 
 const ContactForm = () => {
   return (
-    <div className='py-20'>
-      <div>
-        <div className='md:max-w-4xl w-auto mx-auto'>
-          <div className='bg-gray-50 shadow-sm flex  justify-center items-center md:h-[450px] h-auto px-3 p'>
-            <div className='flex  md:flex-row flex-col justify-center items-center px-3'>
-              <div className='border-4 border-slate-900 rounded-lg  px-4 py-4 space-y-4 shadow-md'>
+    <div className='py-12' id='contact'>
+      <div >
+        <div className='md:w-auto '>
+          <div className='flex md:justify-center md:items-center px-3'>
+            <div className='md:w-auto w-full'>
+              <div className='w-full lg:w-auto bg-gray-50 shadow-sm border-4 border-slate-900 rounded-lg  px-4 py-4 space-y-4 shadow-md'>
                 <div className='font-bold font-poppins text-2xl max-w-sm'>
                   <h2 className='max-w-lg'>Fill the form</h2>
-                  <h2 className='text-purple-500 '>to contact me</h2>
+                  <h2 className='text-purple-500'>to contact me</h2>
                 </div>
                 <div className='flex md:flex-row flex-col gap-20'>
                   <form action="" className='space-y-3 flex-grow' method="get">
-                    <div className='flex flex-row gap-4'>
+                    <div className='flex md:flex-row flex-col gap-4'>
                       <div>
-                        <input type="text" placeholder='firstname' className='border-b-2 outline-none px-3 py-3 bg-gray-50 border-gray-200' />
+                        <input type="text" placeholder='firstname' className='border-b-2 outline-none px-3 py-3 bg-gray-50 border-gray-200 w-full' />
                       </div>
                       <div>
-                        <input type="text" placeholder='lastname' className='border-b-2 outline-none px-3 py-3 bg-gray-50 border-gray-200' />
+                        <input type="text" placeholder='lastname' className='border-b-2 outline-none px-3 py-3 bg-gray-50 border-gray-200 w-full' />
                       </div>
                     </div>
                     <div>

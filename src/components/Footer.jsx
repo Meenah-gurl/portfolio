@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className='bg-purple-900 text-white py-24 px-6 space-y-2'>
+    <div className='bg-purple-900 text-white py-20 px-6 space-y-2'>
       <div className='max-6xl mx-auto flex flex-col justify-center items-center space-y-3'>
         <div className='flex flex-col justify-center items-center'>
           <h1 className='md:text-5xl text-2xl text-white font-poppins font-medium'>Let's discuss for a project</h1>
@@ -20,21 +20,21 @@ export const Footer = () => {
       <div className='pt-14 max-w-6xl mx-auto'>
         <div className='flex md:flex-row flex-col md:justify-start md:items-center justify-center items-center gap-3'>
           <div className='flex flex-row gap-4 flex-grow'>
-            <Link to="/about">
+            <a href='#about' >
               <div className='text-white font-poppins font-light text-lg hover:text-purple-400 transistion-all duration-300'>
                 About
               </div>
-            </Link>
-            <Link to="/portfolio">
+            </a>
+            <a href='#services'>
               <div className='text-white font-poppins font-light text-lg hover:text-purple-400 transistion-all duration-300'>
                Works
               </div>
-            </Link>
-            <Link to="/contact">
+            </a>
+            <a href='contact'>
               <div className='text-white font-poppins font-light text-lg hover:text-purple-400 transistion-all duration-300'>
                 Contact
               </div>
-            </Link>
+            </a>
           </div>
 
           <div className='flex flex-row gap-4'>

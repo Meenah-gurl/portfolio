@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const briefabout = () => {
   return (
-    <div className='py-4 px-4'>
+    <div className='py-4 px-4' id='about'>
         <div className=''>
             <span className='font-poppins font-bold flex flex-col justify-center items-center text-slate-900 text-lg'>
                 <h1 className='flex justify-center items-center'>ABOUT ME</h1>

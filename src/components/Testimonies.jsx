@@ -33,7 +33,7 @@ export const Testimonies = () => {
             <SplideSlide>
                 <div className='flex flex-col justify-center items-center py-16 space-y-4'>
                     <div className='text-white text-6xl'>
-                        <i class="ri-double-quotes-l"></i>
+                        <i className="ri-double-quotes-l"></i>
                     </div>
                     <div className='text-md max-w-2xl text-white font-poppins font-normal'>
                         <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quam voluptate architecto deserunt expedita voluptas commodi molestias. Enim laborum vitae ipsa commodi. Veniam fuga</p>
@@ -50,7 +50,7 @@ export const Testimonies = () => {
             <SplideSlide>
                 <div className='flex flex-col justify-center items-center py-16 space-y-4'>
                     <div className='text-white text-6xl'>
-                        <i class="ri-double-quotes-l"></i>
+                        <i className="ri-double-quotes-l"></i>
                     </div>
                     <div className='text-md max-w-2xl text-white font-poppins font-normal'>
                         <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quam voluptate architecto deserunt expedita voluptas commodi molestias. Enim laborum vitae ipsa commodi. Veniam fuga</p>

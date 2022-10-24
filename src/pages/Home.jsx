@@ -4,6 +4,7 @@ import BriefAbout from '../components/BriefAbout'
 import Testimonies from "../components/Testimonies";
 import Service from '../components/Service'
 import Works from "../components/Works";
+import ContactForm from "../components/ContactForm";
 
 
 let Home = () => {
@@ -13,8 +14,8 @@ let Home = () => {
     return (
         <>
             <div className="text-slate-900  lg:pt-28 py-24 pt-16 md:px-2 px-2">
-                <div className="flex lg:flex-row flex-col  gap-4 max-w-6xl mx-auto ">
-                    <div className="flex-grow flex flex-col w-full pt-20  space-y-4 lg:justify-start lg:items-start  justify-center items-center">
+                <div className="flex lg:flex-row flex-col  gap-6 max-w-6xl mx-auto ">
+                    <div className="flex-grow flex flex-col w-full pt-20  space-y-5 lg:justify-start lg:items-start  justify-center items-center">
                         <div className='text-xs w-40 transistion-all text-white px-2  py-1 bg-slate-900 rounded flex justify-center items-center'>
                             Welcome to my portfolio
                         </div>
@@ -42,7 +43,7 @@ let Home = () => {
                     </div>
                     <div className="relative" id="bannerSide">
                         <div>
-                            <img src="/src/assets/mewhite.png" className="md:w-[50vh] w-[40vh] lg:relative lg:left-20 md:left-32" alt="" />
+                            <img src="/src/assets/mewhite.png" className="md:w-[50vh] w-[40vh] lg:relative lg:left-3 md:mx-auto" alt="" />
                         </div>
                     </div>
                     {/* <div className="">
@@ -55,6 +56,7 @@ let Home = () => {
             <Service/>
             <Works/>
             <Testimonies/>
+            <ContactForm/>
             {/* <Outlet/> */}
            
         </>

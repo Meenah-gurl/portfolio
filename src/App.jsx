@@ -17,7 +17,9 @@ import { AuthProvider } from './contexts/AuthContext'
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 function App() {
+  console.log("==", import.meta.env.VITE_FIREBASE_API_KEY)
   return (
+
     <div>
       <AuthProvider>
         <Routes>

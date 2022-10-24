@@ -26,9 +26,9 @@ export const Works = () => {
         <div className='max-w-6xl mx-auto space-y-8'>
             <div className='flex font-poppins text-slate-900 font-semibold justify-center items-start'>
                 <ul  className='nav nav-pills flex flex-row gap-3'>
-                    <li className='nav-item hover:border-b-2 hover:border-purple-500 hover:transition-all duration-300'>
+                    {/* <li className='nav-item hover:border-b-2 hover:border-purple-500 hover:transition-all duration-300'>
                         <button  onClick={()=>setshowTab((current) => !current)}>All</button>
-                    </li>
+                    </li> */}
                     <li  className='hover:border-b-2 hover:border-purple-500 hover:transition-all duration-300'>
                         <button  onClick={()=>setshowTab((prev) => !prev)} >Web Design</button>
                     </li>
@@ -76,14 +76,15 @@ export const Works = () => {
                         <div>
                             <div className=''>
                                 dzjdsjsdzfhg\sk
-                            </div>
+                            </div>    
                         </div>
-                        : 
+                        : showTab ?
                             <div>
                                 <div>
                                     ui design
                                 </div>
                             </div>
+                        
                 }
                 
             </div>

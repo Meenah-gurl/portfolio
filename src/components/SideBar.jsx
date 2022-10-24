@@ -10,7 +10,7 @@ const SideBar = () => {
         </div>
 
         <div className='flex flex-col gap-6'>
-            <Link activeClassName="activeSidebar">
+            <Link activeclassname="activeSidebar">
                 <div className='flex gap-4'>
                     <div className='rounded-full flex justify-center items-center bg-white h-6 w-6'>
                         <i className='ri-dashboard-fill'></i>
@@ -19,7 +19,7 @@ const SideBar = () => {
                 </div>
             </Link>
 
-            <Link activeClassName="activeSidebar">
+            <Link activeclassname="activeSidebar">
                 <div className='flex gap-4'>
                     <div className='rounded-full flex justify-center items-center bg-white h-6 w-6'>
                         <i className='ri-upload-cloud-fill'></i>
@@ -37,7 +37,7 @@ const SideBar = () => {
                 </div>
             </Link>
 
-            <Link activeClassName="activeSidebar">
+            <Link activeclassname="activeSidebar">
                 <div className='flex gap-4'>
                     <div className='rounded-full flex justify-center items-center bg-white h-6 w-6'>
                         <i className='ri-message-3-fill'></i>
@@ -46,7 +46,7 @@ const SideBar = () => {
                 </div>
             </Link>
 
-            <Link activeClassName="activeSidebar">
+            <Link activeclassname="activeSidebar">
                 <div className='flex gap-4'>
                     <div className='rounded-full flex justify-center items-center bg-white h-6 w-6'>
                         <i className='ri-settings-3-fill'></i>
