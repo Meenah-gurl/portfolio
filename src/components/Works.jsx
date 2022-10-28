@@ -73,17 +73,45 @@ export const Works = () => {
                     </div>
                     : 
                     <div>
-                        <div className='flex md:flex-row flex-col gap-4 font-poppins'>
-                            <div className='flex flex-col space-2'>
+                        <div className='grid md:grid-cols-3 grid-cols-1 gap-4 font-poppins'>
+                            <div className='flex flex-col space-2 py-3 px-3'>
                                 <div>
-                                    <img src="/src/assets/figma1.png" className='w-80 rounded-md' alt="" />
+                                    <img src="/src/assets/figma1.png" className='w-96 rounded-md' alt="" />
                                 </div>
                                 <div className='font-bold font-poppins flex flex-row '>
                                     <span className='flex-grow'>Fund Raising</span>
-                                    <span className='text-sm text-white rounded-lg bg-black py-1 px-2 text-center'>Figma</span>
+                                    <span className='text-sm text-white rounded-lg bg-black py-1 px-1 text-center'>Figma</span>
                                 </div>
-                                <p className='max-w-sm text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis magnam ab f</p>
+                                <p className='max-w-xs text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis magnam ab f</p>
+                                <div className='flex justify-end items-center'>
+                                  <a href="https://www.figma.com/file/Tk2kVzYmR9EUJlSbLQtptr/FraisingPrototype?node-id=0%3A1" className='text-xs text-blue-600'>Link to Project</a>
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col space-2 py-3 px-3'>
                                 <div>
+                                    <img src="/src/assets/figma1.png" className='w-96 rounded-md' alt="" />
+                                </div>
+                                <div className='font-bold font-poppins flex flex-row '>
+                                    <span className='flex-grow'>Fund Raising</span>
+                                    <span className='text-sm text-white rounded-lg bg-black py-1 px-1 text-center'>Figma</span>
+                                </div>
+                                <p className='max-w-xs text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis magnam ab f</p>
+                                <div className='flex justify-end items-center'>
+                                  <a href="https://www.figma.com/file/Tk2kVzYmR9EUJlSbLQtptr/FraisingPrototype?node-id=0%3A1" className='text-xs text-blue-600'>Link to Project</a>
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col space-2 py-3 px-3'>
+                                <div>
+                                    <img src="/src/assets/figma1.png" className='w-96 rounded-md' alt="" />
+                                </div>
+                                <div className='font-bold font-poppins flex flex-row '>
+                                    <span className='flex-grow'>Fund Raising</span>
+                                    <span className='text-sm text-white rounded-lg bg-black py-1 px-1 text-center'>Figma</span>
+                                </div>
+                                <p className='max-w-xs text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis magnam ab f</p>
+                                <div className='flex justify-end items-center'>
                                   <a href="https://www.figma.com/file/Tk2kVzYmR9EUJlSbLQtptr/FraisingPrototype?node-id=0%3A1" className='text-xs text-blue-600'>Link to Project</a>
                                 </div>
                             </div>
